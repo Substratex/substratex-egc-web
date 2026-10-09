@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://substratex.example/spec/egc/0.1/evidence-object.schema.json",
+  "title": "EGC Evidence Object 0.1",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "context_id",
+    "version",
+    "support_class",
+    "evidence_state"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "context_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "support_class": {
+      "enum": [
+        "source",
+        "operator_declared",
+        "contextual",
+        "computed",
+        "derived",
+        "proxy",
+        "interpretive",
+        "experimental"
+      ]
+    },
+    "evidence_state": {
+      "enum": [
+        "available",
+        "partial",
+        "not_observed",
+        "not_supplied",
+        "not_eligible",
+        "not_computable",
+        "below_detection_limit",
+        "withheld",
+        "unavailable",
+        "conflicting"
+      ]
+    },
+    "domain_state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "value": {},
+    "method": {
+      "type": "object"
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "lineage": {
+      "type": "array"
+    },
+    "scope": {
+      "type": "object"
+    },
+    "uncertainty": {
+      "type": "object"
+    },
+    "limitations": {
+      "type": "array"
+    },
+    "authority": {
+      "type": "object"
+    },
+    "disclosure": {
+      "type": "object"
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

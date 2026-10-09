@@ -1,0 +1,24 @@
+{
+  "fixture": "scope_broadened",
+  "expected": "fail",
+  "expected_code": "EGC204",
+  "source_claim": {
+    "claim_id": "weakening-local",
+    "scope": {
+      "frames": [
+        8,
+        20
+      ]
+    }
+  },
+  "rendered_claim": {
+    "claim_id": "weakening-local",
+    "scope": {
+      "frames": [
+        1,
+        47
+      ]
+    }
+  },
+  "assertion": "A local interval claim was silently broadened to the whole run."
+}

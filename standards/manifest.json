@@ -1,0 +1,18 @@
+{
+  "publication": "Evidence-Governed Computation Web Specifications",
+  "publisher": "SubstrateX",
+  "originator": "Arjay Asadi",
+  "version": "0.1-draft",
+  "date": "2026-10",
+  "documents": [
+    "EGC-CORE-0.1",
+    "EGC-EVIDENCE-0.1",
+    "EGC-CLAIM-0.1",
+    "EGC-ABSENCE-0.1",
+    "EGC-CONFORMANCE-0.1",
+    "EGC-UI-0.1",
+    "EGC-JSON-0.1"
+  ],
+  "reference_implementation": "SubstrateX EGC Web",
+  "normative_foundation": "Foundations of Evidence-Governed Computation, Paper VI, Version 2.0"
+}

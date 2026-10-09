@@ -1,0 +1,36 @@
+{
+  "evidence_id": "basin_exit",
+  "context_id": "run-001",
+  "version": "1",
+  "support_class": "derived",
+  "evidence_state": "available",
+  "domain_state": "candidate",
+  "value": {
+    "frame": 20
+  },
+  "method": {
+    "id": "boundary-detector",
+    "version": "1.0.0"
+  },
+  "source_refs": [
+    {
+      "ref": "runtime:frame:20"
+    }
+  ],
+  "lineage": [],
+  "scope": {
+    "frames": [
+      1,
+      47
+    ]
+  },
+  "uncertainty": {},
+  "limitations": [
+    "Candidate-only; not a confirmed Basin Exit."
+  ],
+  "authority": {
+    "method": true,
+    "claim": false
+  },
+  "disclosure": {}
+}

@@ -1,0 +1,35 @@
+{
+  "fixture": "candidate_promoted",
+  "expected": "fail",
+  "expected_code": "EGC202",
+  "evidence": {
+    "evidence_id": "basin_exit",
+    "context_id": "ctx-fixture",
+    "version": "1",
+    "support_class": "derived",
+    "evidence_state": "available",
+    "domain_state": "candidate",
+    "value": {
+      "frame": 20
+    },
+    "source_refs": [
+      {
+        "ref": "runtime:frame:20"
+      }
+    ]
+  },
+  "claim_contract": {
+    "claim_id": "basin-exit-confirmed",
+    "claim_class": "protocol_classification",
+    "requires": [
+      {
+        "evidence": "basin_exit",
+        "domain_state": [
+          "confirmed"
+        ]
+      }
+    ],
+    "absence_behavior": "not_computable",
+    "version": "0.1"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fixture": "required_evidence_missing",
+  "expected": "fail",
+  "expected_code": "EGC101",
+  "evidence": [],
+  "claim_contract": {
+    "claim_id": "failure-confirmed",
+    "claim_class": "protocol_classification",
+    "proposition_schema": {
+      "type": "failure_confirmation"
+    },
+    "requires": [
+      {
+        "evidence": "basin_exit",
+        "domain_state": [
+          "confirmed"
+        ],
+        "minimum_support_class": "derived"
+      },
+      {
+        "evidence": "observable_failure",
+        "domain_state": [
+          "observed"
+        ],
+        "minimum_support_class": "source",
+        "require_source_ref": true
+      }
+    ],
+    "method": {
+      "id": "failure-formation",
+      "version": "1.0.0"
+    },
+    "scope": {},
+    "uncertainty_rule": {},
+    "allowed_renderings": [
+      "Failure confirmed"
+    ],
+    "forbidden_extensions": [
+      "Failure caused by basin exit"
+    ],
+    "absence_behavior": "not_computable",
+    "export_policy": {},
+    "version": "0.1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "fixture": "zero_is_value",
+  "expected": "pass",
+  "evidence": {
+    "evidence_id": "queue_depth",
+    "context_id": "ctx-fixture",
+    "version": "1",
+    "support_class": "source",
+    "evidence_state": "available",
+    "domain_state": "observed",
+    "value": 0,
+    "source_refs": [
+      {
+        "ref": "metric:queue_depth"
+      }
+    ]
+  },
+  "assertion": "0 is preserved as an observed value and is not treated as missing."
+}

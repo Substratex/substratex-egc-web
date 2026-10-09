@@ -105,6 +105,21 @@ npm run build
 npm run demo
 ```
 
+
+## Standards-track specifications
+
+SubstrateX EGC Web™ is the reference SDK. The implementation-neutral **Evidence-Governed Computation Web Specifications** live in [`standards/`](./standards/). Draft 0.1 publishes:
+
+- `EGC-CORE-0.1`
+- `EGC-EVIDENCE-0.1`
+- `EGC-CLAIM-0.1`
+- `EGC-ABSENCE-0.1`
+- `EGC-CONFORMANCE-0.1`
+- `EGC-UI-0.1`
+- `EGC-JSON-0.1`
+
+The standards-track documents are intended to support independent implementations. React and Vue are bindings to the architecture, not definitions of it. See [`docs/STANDARDS-ALIGNMENT.md`](./docs/STANDARDS-ALIGNMENT.md) for the mapping to the normative Evidence-Governed Computation foundation.
+
 ## Status
 
 This is a **v0.1 reference implementation** intended to establish the architecture and executable semantics. It is not yet a security boundary by itself and should not be described as preventing malicious code from bypassing the framework. Enforcement becomes stronger as applications route consequential claims exclusively through EGC-governed projections and add build-time linting / CI conformance checks.

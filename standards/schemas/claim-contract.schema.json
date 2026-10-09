@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://substratex.example/spec/egc/0.1/claim-contract.schema.json",
+  "title": "EGC Claim Contract 0.1",
+  "type": "object",
+  "required": [
+    "claim_id",
+    "claim_class",
+    "requires",
+    "absence_behavior",
+    "version"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_class": {
+      "enum": [
+        "source_statement",
+        "derived_measurement",
+        "protocol_classification",
+        "supported_interpretation",
+        "contextual_assertion",
+        "recommendation"
+      ]
+    },
+    "proposition_schema": {
+      "type": "object"
+    },
+    "requires": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "evidence"
+        ],
+        "properties": {
+          "evidence": {
+            "type": "string"
+          },
+          "evidence_state": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "domain_state": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "minimum_support_class": {
+            "type": "string"
+          },
+          "require_source_ref": {
+            "type": "boolean"
+          },
+          "optional": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "method": {
+      "type": "object"
+    },
+    "scope": {
+      "type": "object"
+    },
+    "uncertainty_rule": {
+      "type": "object"
+    },
+    "allowed_renderings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "forbidden_extensions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "absence_behavior": {
+      "enum": [
+        "conditional",
+        "provisional",
+        "withheld",
+        "not_computable",
+        "prohibited"
+      ]
+    },
+    "export_policy": {
+      "type": "object"
+    },
+    "version": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

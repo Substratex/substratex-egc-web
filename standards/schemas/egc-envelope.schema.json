@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://substratex.example/spec/egc/0.1/egc-envelope.schema.json",
+  "title": "EGC Bundle Envelope 0.1",
+  "type": "object",
+  "required": [
+    "egc_spec",
+    "document_type",
+    "context",
+    "evidence",
+    "claim_contracts",
+    "surface_bindings"
+  ],
+  "properties": {
+    "egc_spec": {
+      "const": "0.1"
+    },
+    "document_type": {
+      "const": "egc_bundle"
+    },
+    "context": {
+      "type": "object",
+      "required": [
+        "context_id"
+      ],
+      "properties": {
+        "context_id": {
+          "type": "string"
+        },
+        "contract_bundle": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "evidence-object.schema.json"
+      }
+    },
+    "claim_contracts": {
+      "type": "array",
+      "items": {
+        "$ref": "claim-contract.schema.json"
+      }
+    },
+    "claim_evaluations": {
+      "type": "array"
+    },
+    "surface_bindings": {
+      "type": "array",
+      "items": {
+        "$ref": "surface-binding.schema.json"
+      }
+    },
+    "challenges": {
+      "type": "array"
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

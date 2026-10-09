@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://substratex.example/spec/egc/0.1/surface-binding.schema.json",
+  "title": "EGC Surface Binding 0.1",
+  "type": "object",
+  "required": [
+    "surface_id",
+    "output_id",
+    "context_id",
+    "claim_id",
+    "status",
+    "version"
+  ],
+  "properties": {
+    "surface_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "output_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "context_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_ref": {
+      "type": "string"
+    },
+    "claim_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "method": {
+      "type": "object"
+    },
+    "scope": {
+      "type": "object"
+    },
+    "status": {
+      "enum": [
+        "admissible",
+        "conditional",
+        "provisional",
+        "disputed",
+        "superseded",
+        "withheld",
+        "not_computable",
+        "prohibited"
+      ]
+    },
+    "rendering_contract": {
+      "type": "string"
+    },
+    "forbidden_claims": {
+      "type": "array"
+    },
+    "disclosure": {
+      "type": "object"
+    },
+    "version": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}
