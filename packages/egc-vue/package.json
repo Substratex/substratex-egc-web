@@ -1,0 +1,9 @@
+{
+  "name": "@substratex/egc-vue",
+  "version": "0.1.0",
+  "type": "module",
+  "peerDependencies": {
+    "vue": ">=3.4",
+    "@substratex/egc-core": "0.1.0"
+  }
+}

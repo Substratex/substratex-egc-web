@@ -1,0 +1,1 @@
+{"version":3,"file":"authority.d.ts","sourceRoot":"","sources":["../src/authority.ts"],"names":[],"mappings":"AAAA,OAAO,EAAoB,KAAK,iBAAiB,EAAE,MAAM,YAAY,CAAC;AAMtE,wBAAgB,aAAa,CAAC,SAAS,EAAE,iBAAiB,GAAG,MAAM,CAElE;AAED,wBAAgB,gBAAgB,CAC9B,MAAM,EAAE,iBAAiB,EACzB,QAAQ,EAAE,iBAAiB,GAC1B,OAAO,CAET;AAED,wBAAgB,gBAAgB,CAC9B,WAAW,EAAE,SAAS,iBAAiB,EAAE,GACxC,iBAAiB,GAAG,SAAS,CAK/B"}

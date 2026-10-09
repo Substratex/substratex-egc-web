@@ -1,0 +1,9 @@
+{
+  "name": "@substratex/egc-react",
+  "version": "0.1.0",
+  "type": "module",
+  "peerDependencies": {
+    "react": ">=18",
+    "@substratex/egc-core": "0.1.0"
+  }
+}

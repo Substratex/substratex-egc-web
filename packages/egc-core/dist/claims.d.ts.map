@@ -1,0 +1,1 @@
+{"version":3,"file":"claims.d.ts","sourceRoot":"","sources":["../src/claims.ts"],"names":[],"mappings":"AACA,OAAO,KAAK,EACV,aAAa,EACb,eAAe,EAGf,eAAe,EAGhB,MAAM,YAAY,CAAC;AAEpB,wBAAgB,WAAW,CAAC,QAAQ,EAAE,aAAa,GAAG,QAAQ,CAAC,aAAa,CAAC,CAO5E;AASD,wBAAgB,aAAa,CAC3B,OAAO,EAAE,eAAe,EACxB,QAAQ,EAAE,aAAa,GACtB,eAAe,CA+EjB"}

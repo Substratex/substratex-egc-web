@@ -1,0 +1,23 @@
+{
+  "name": "substratex-egc-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reference implementation of Evidence-Governed Computation for evidence-bound web interfaces.",
+  "license": "UNLICENSED",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build:core": "tsc -p packages/egc-core/tsconfig.json",
+    "build:validator": "tsc -p packages/egc-validator/tsconfig.json",
+    "build:devtools": "tsc -p packages/egc-devtools/tsconfig.json",
+    "build:basic": "tsc -p examples/basic/tsconfig.json",
+    "build": "npm run build:core && npm run build:validator && npm run build:devtools && npm run build:basic",
+    "demo": "node examples/basic/dist/index.js",
+    "test": "npm run build && node examples/basic/conformance.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
